@@ -22,7 +22,7 @@ header {
   cursor: pointer;
 }
 
-main {
+section {
   background-image: url(./images/header-bg.svg);
   background-repeat: no-repeat;
   background-size: 100%;
