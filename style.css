@@ -22,7 +22,7 @@ header {
   cursor: pointer;
 }
 
-section {
+.intro {
   background-image: url(./images/header-bg.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -100,6 +100,10 @@ a {
   padding: 0 0;
 }
 
+.projects {
+  display: grid;
+}
+
 .card {
   height: 90vh;
   padding: 16px 20px;
@@ -137,6 +141,14 @@ ul {
   margin-top: 20px;
 }
 
+.card h2 {
+  color: #344563;
+}
+
+.tonic-txt {
+  color: #344563;
+}
+
 .jhc li {
   display: flex;
   justify-content: flex-start;
@@ -156,7 +168,7 @@ ul {
 }
 
 .tonic ul .blc {
-  color: black;
+  color: #344563;
   font-weight: 500;
   list-style: none;
 }
@@ -297,7 +309,9 @@ span {
   margin-bottom: 0;
 }
 
-.about-me .first {
+.about-me {
   height: auto;
   margin-bottom: 0;
+  padding: 20px;
+  padding-top: 100px;
 }
