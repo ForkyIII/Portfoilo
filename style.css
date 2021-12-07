@@ -105,7 +105,6 @@ a {
 }
 
 .card {
-  height: 90vh;
   padding: 16px 20px;
   margin-bottom: 60px;
   background: rgba(255, 255, 255, 1);
@@ -231,10 +230,6 @@ button {
   line-height: 24px;
 }
 
-.height-fix {
-  height: 100vh;
-}
-
 .img-fix {
   width: 355px;
   height: 260px;
@@ -352,16 +347,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
 .inputs {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 80%;
   list-style-type: none;
   margin-bottom: 1rem;
 }
