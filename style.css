@@ -201,6 +201,22 @@ ul {
   display: flex;
 }
 
+button:hover {
+  color: white;
+  background-color: #7f8cff;
+}
+
+button:active {
+  color: white;
+  background-color: #2230d2;
+}
+
+button:disabled,
+button[disabled] {
+  color: #172b4d;
+  background-color: white;
+}
+
 .fir {
   padding: 4px 9px;
   background: rgba(235, 235, 255, 1);
