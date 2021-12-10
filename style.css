@@ -146,7 +146,14 @@ ul {
   animation-duration: 12s;
 }
 
-
+@keyframes rainbow {
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
+}
 
 .experties li {
   margin-top: 20px;
