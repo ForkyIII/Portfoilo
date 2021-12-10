@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -140,6 +140,13 @@ ul {
   margin-bottom: 30px;
   display: flex;
 }
+
+.tonic h2 {
+  animation-name: rainbow;
+  animation-duration: 12s;
+}
+
+
 
 .experties li {
   margin-top: 20px;
