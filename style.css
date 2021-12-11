@@ -105,7 +105,6 @@ a {
 
 .projects {
   display: grid;
-  max-width: 200px;
   margin: 0 auto;
 }
 
@@ -470,11 +469,11 @@ footer {
   }
 
   .connect {
-    max-width: 25%;
+    max-width: 50%;
   }
 
   .projects {
-    min-width: 80vw;
+    max-width: 80vw;
     gap: 70px;
     margin-bottom: 70px;
     margin-top: 70px;
@@ -485,6 +484,8 @@ footer {
     margin: 24px;
     height: 496px;
     width: 1156px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-img {
@@ -510,7 +511,7 @@ footer {
 
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     padding: 70px 30px 60px 140px;
   }
 
@@ -552,6 +553,10 @@ footer {
     line-height: 28px;
     padding: 10px 0;
     font-weight: normal;
+  }
+
+  .inputs {
+    border-radius: 0;
   }
 
   .form {
