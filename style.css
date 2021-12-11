@@ -9,8 +9,6 @@
 }
 
 body {
-  max-width: 400px;
-  margin: 0  auto;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -20,6 +18,10 @@ header {
   padding: 30px 20px;
   background: #fff;
   cursor: pointer;
+}
+
+.main-nav {
+  display: none;
 }
 
 .intro {
@@ -49,6 +51,7 @@ header {
   font-weight: 800;
   display: flex;
   align-items: center;
+  max-width: 190px;
 }
 
 .hero p {
@@ -102,19 +105,23 @@ a {
 
 .projects {
   display: grid;
+  margin: 0 auto;
 }
 
 .card {
+  max-width: 359px;
   padding: 16px 20px;
   margin-bottom: 60px;
   background: rgba(255, 255, 255, 1);
   border-radius: 16px;
   border: 1px solid #dfe1e6;
   margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-img {
-  height: 295px;
+  height: 264px;
   border-radius: 8px;
 }
 
@@ -190,7 +197,18 @@ ul {
   list-style: none;
   font-size: 12px;
   font-weight: 500;
-  color: #6070ff;
+  color: rgba(96, 112, 255, 1);
+}
+
+.rail {
+  padding: 4px 9px;
+  background: rgba(235, 235, 255, 1);
+  border-radius: 10px;
+  margin-left: 5px;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(96, 112, 255, 1);
 }
 
 .sec {
@@ -231,8 +249,7 @@ button {
 }
 
 .img-fix {
-  width: 355px;
-  height: 260px;
+  height: 236px;
 }
 
 .background-fix {
@@ -242,6 +259,7 @@ button {
 }
 
 .about-txt {
+  margin-bottom: 14px;
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
@@ -286,6 +304,10 @@ summary {
   align-items: center;
   width: 350px;
   margin-bottom: 30px;
+}
+
+.rotate .lango img {
+  transform: rotateZ(90deg);
 }
 
 span {
@@ -401,4 +423,156 @@ footer {
 .btn-submit[disabled] {
   color: #172b4d;
   background-color: white;
+}
+
+.main-nav a {
+  color: #344563;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 8em;
+  }
+
+  nav {
+    width: 35%;
+  }
+
+  .humberger {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8em;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .hero h1 {
+    max-width: 400px;
+  }
+
+  .hero p {
+    max-width: 750px;
+  }
+
+  .intro .connect {
+    max-width: 25%;
+  }
+
+  .about-me .connect {
+    max-width: 50%;
+  }
+
+  .projects {
+    max-width: 80vw;
+    gap: 70px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+
+  .card {
+    display: flex;
+    margin: 24px;
+    height: 496px;
+    max-width: 1156px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-img {
+    width: 544px;
+    height: 448px;
+    padding: 10px;
+  }
+
+  .img2 {
+    order: 2;
+  }
+
+  .img4 {
+    order: 1;
+  }
+
+  .dsk-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 5px 20px;
+  }
+
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 70px 30px 60px 140px;
+    gap: 30px;
+  }
+
+  .experties {
+    max-width: 200px;
+  }
+
+  .lango {
+    width: 600px;
+  }
+
+  .jhc {
+    flex-direction: row;
+    width: 350px;
+  }
+
+  .jhc li {
+    width: 300px;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: flex-start;
+  }
+
+  .jhc span {
+    padding: 0;
+  }
+
+  .form-container {
+    background-size: 40% 70%;
+  }
+
+  .form-title {
+    font-size: 50px;
+    padding-top: 70px;
+  }
+
+  .form-p {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 0;
+    font-weight: normal;
+  }
+
+  .inputs {
+    border-radius: 0;
+  }
+
+  .form {
+    width: 447px;
+  }
+
+  .btn-submit {
+    align-self: center;
+    margin-bottom: 70px;
+  }
 }
